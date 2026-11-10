@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hassna Chaouki — Computer Science & Cybersecurity</title>
+<meta name="description" content="Portfolio of Hassna Chaouki, first-year Computer Science Preparatory Cycle student at HESTIM School, Casablanca.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Reusable SVG art: flower, branch, shield -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flower" viewBox="-50 -50 100 100">
+    <g fill="#DCA8BA" fill-opacity=".85" stroke="#8F174B" stroke-width=".9">
+      <ellipse cx="0" cy="-25" rx="11" ry="21"/><ellipse cx="0" cy="-25" rx="11" ry="21" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-25" rx="11" ry="21" transform="rotate(120)"/><ellipse cx="0" cy="-25" rx="11" ry="21" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-25" rx="11" ry="21" transform="rotate(240)"/><ellipse cx="0" cy="-25" rx="11" ry="21" transform="rotate(300)"/>
+    </g>
+    <circle r="7" fill="#8F174B"/><g fill="#F8E7EC"><circle cx="-2" cy="-2" r="1.2"/><circle cx="2" cy="1" r="1.2"/><circle cx="-1" cy="3" r="1"/></g>
+  </symbol>
+  <symbol id="branch" viewBox="0 0 120 400">
+    <path d="M60 400C40 300 80 200 55 100S70 20 60 0" fill="none" stroke="#755D58" stroke-width="2"/>
+    <g fill="#DCA8BA" stroke="#8F174B" stroke-width="1">
+      <path d="M57 320c-30-8-40-30-38-50 25 4 40 22 38 50z"/><path d="M62 250c28-6 40-26 40-48-26 2-42 20-40 48z"/>
+      <path d="M56 170c-28-6-38-26-36-46 24 2 38 18 36 46z"/><path d="M60 100c24-8 34-26 32-44-22 4-34 20-32 44z"/>
+    </g>
+  </symbol>
+</svg>
+
+<!-- Fixed floral decoration on the left side -->
+<div class="florals" aria-hidden="true">
+  <svg class="br" viewBox="0 0 120 400"><use href="#branch"/></svg>
+  <svg class="fl f1" viewBox="-50 -50 100 100"><use href="#flower"/></svg>
+  <svg class="fl f2" viewBox="-50 -50 100 100"><use href="#flower"/></svg>
+  <svg class="fl f3" viewBox="-50 -50 100 100"><use href="#flower"/></svg>
+  <i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i>
+</div>
+<div class="cursor" aria-hidden="true"></div>
+
+<!-- Folder-style navigation -->
+<header class="top">
+  <a class="logo" href="#home">H.C</a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="folders">Menu</button>
+  <nav class="folders" id="folders" aria-label="Main">
+    <a href="#about">About</a><a href="#cyber">Cyber</a><a href="#skills">Skills</a>
+    <a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="hand title" aria-label="Portfolio"></p>
+    <h1><span class="l1">Hassna</span><span class="l2">Chaouki</span></h1>
+    <p class="role">Computer Science Student | Future Cybersecurity Professional</p>
+    <p class="statement">I'm learning how the digital world is built, and how to protect it. Curious, ambitious, and growing one project at a time.</p>
+    <a class="btn" href="#projects">Explore my work</a>
+    <p class="term" aria-hidden="true"><span>$</span> whoami<br>&gt; hassna // learning, every day<i class="blink">_</i></p>
+  </div>
+  <figure class="polaroid tilt-r">
+    <i class="tape"></i>
+    <img class="ph" src="hassna-photo.jpeg" alt="Illustration of Hassna taking a mirror selfie">
+    <figcaption class="hand">Hassna, 1st year @ HESTIM</figcaption>
+  </figure>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <h2 class="big reveal">About <em>me</em></h2>
+  <div class="about-grid">
+    <div class="paper reveal">
+      <p class="lead">I'm a first-year student in the Computer Science Preparatory Cycle at HESTIM School, Casablanca, Morocco.</p>
+      <p>I'm building my technical knowledge through academic projects, personal experiments and continuous learning. I'm drawn to cybersecurity, artificial intelligence, programming, computer networks and data protection, and to the way technology and innovation shape everyday life.</p>
+    </div>
+    <div class="paper note reveal">
+      <h3 class="hand">interests</h3>
+      <ul class="chips" id="interests"></ul>
+    </div>
+    <figure class="polaroid tilt-l reveal">
+      <i class="tape"></i><img class="ph sm" src="tech-illustration.jpeg" alt="Pink illustration of a laptop surrounded by technology icons">
+      <figcaption class="hand">my journey into tech ✿</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CYBERSECURITY -->
+<section class="sec" id="cyber">
+  <h2 class="big reveal">Behind the <em>digital world</em></h2>
+  <div class="cyber-grid">
+    <svg class="shield reveal" viewBox="0 0 320 320" role="img" aria-label="Line art of a shield surrounded by connected network nodes">
+      <g fill="none" stroke="#8F174B" stroke-width="1.6" stroke-linecap="round">
+        <path class="draw" d="M160 40l90 34v70c0 60-40 104-90 132-50-28-90-72-90-132V74z"/>
+        <path class="draw" d="M160 70l62 24v52c0 44-28 76-62 98-34-22-62-54-62-98V94z" stroke-dasharray="3 6"/>
+        <rect x="140" y="140" width="40" height="34" rx="5"/><path d="M147 140v-12a13 13 0 0126 0v12"/><circle cx="160" cy="156" r="3" fill="#8F174B"/>
+        <path stroke-dasharray="4 5" d="M70 60L28 28M250 70l42-34M52 190l-30 36M268 190l34 40M160 272v40M28 28L22 226M292 36l10 194"/>
+      </g>
+      <g fill="#F8E7EC" stroke="#8F174B" stroke-width="1.6" class="nodes">
+        <circle cx="28" cy="28" r="7"/><circle cx="292" cy="36" r="7"/><circle cx="22" cy="226" r="7"/><circle cx="302" cy="230" r="7"/><circle cx="160" cy="312" r="7"/>
+      </g>
+      <text x="38" y="20" class="svg-note">encryption</text><text x="214" y="22" class="svg-note">privacy</text><text x="176" y="308" class="svg-note">networks</text>
+    </svg>
+    <div class="reveal">
+      <div class="terminal" aria-label="Terminal-style note">
+        <p><b>$</b> cat mission.txt</p>
+        <p>understand how systems work,<br>then learn how to defend them.</p>
+        <p><b>$</b> ls topics/</p>
+        <p>data-protection &nbsp;networks &nbsp;digital-privacy<br>cyber-threats &nbsp;ai-security</p>
+      </div>
+      <ul class="icons">
+        <li><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.500 8.500-8 11-4.500-2.500-8-6-8-11V5z"/></svg>Digital security</li>
+        <li><svg viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="19" r="2"/><path d="M7 6h10M6 8l5 9M18 8l-5 9"/></svg>Networks</li>
+        <li><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>Data protection</li>
+        <li><svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg>Artificial intelligence</li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.5"/></svg>Cyber threats</li>
+        <li><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><path d="M4 4l16 16"/></svg>Digital privacy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS (rendered from script.js) -->
+<section class="sec" id="skills">
+  <h2 class="big reveal">Skills <em>&amp; technologies</em></h2>
+  <p class="intro reveal">An honest snapshot: everything below is a topic I'm actively learning. Levels are updated as I grow.</p>
+  <div class="skills" id="skillsGrid"></div>
+</section>
+
+<!-- PROJECTS (rendered from script.js) -->
+<section class="sec" id="projects">
+  <h2 class="big reveal">Selected <em>projects</em></h2>
+  <div class="scrap" id="projectGrid"></div>
+</section>
+
+<!-- JOURNEY (rendered from script.js) -->
+<section class="sec" id="journey">
+  <h2 class="big reveal">Learning <em>journey</em></h2>
+  <ol class="timeline" id="timeline"></ol>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact">
+  <h2 class="big reveal">Let's <em>connect</em></h2>
+  <p class="intro reveal">Open to learning opportunities, student projects, internships and conversations about technology and cybersecurity.</p>
+  <div class="paper reveal ctc">
+    <div class="social contact-links">
+      <a href="https://www.linkedin.com/in/hassna-chaouki-101b86448/" target="_blank" rel="noopener" aria-label="Visit Hassna's LinkedIn profile" title="LinkedIn">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18V9.7H5.57V18h2.77ZM6.96 8.57a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22ZM18.44 18v-4.55c0-2.44-1.3-3.58-3.03-3.58a2.62 2.62 0 0 0-2.37 1.3V9.7h-2.77V18h2.77v-4.1c0-1.08.2-2.13 1.55-2.13 1.33 0 1.35 1.24 1.35 2.2V18h2.5Z"/></svg>
+      </a>
+      <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=hassnachaouki410%40gmail.com" target="_blank" rel="noopener" aria-label="Compose an email to Hassna at hassnachaouki410@gmail.com" title="Email">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><p class="hand">made with care & curiosity ✿ © <span id="yr">2026</span> Hassna Chaouki</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
